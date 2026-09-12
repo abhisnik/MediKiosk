@@ -36,14 +36,14 @@ const ai = new GoogleGenAI({
 
 const allowedOrigins = [
   "http://localhost:5173",
+  "http://localhost:5174",
+  "https://medikiosksih-1.onrender.com",
   process.env.FRONTEND_URL,
 ].filter(Boolean);
 
 app.use(
   cors({
     origin: (origin, callback) => {
-      // Allow requests without an Origin header
-      // such as local tools/server health checks.
       if (!origin) {
         return callback(null, true);
       }
@@ -52,9 +52,8 @@ app.use(
         return callback(null, true);
       }
 
-      return callback(
-        new Error("CORS: Origin not allowed")
-      );
+      console.log("Blocked CORS origin:", origin);
+      return callback(null, false);
     },
   })
 );
