@@ -471,3 +471,60 @@ select:focus {
   }
 
 }
+/* Patient details form */
+.field {
+  margin-bottom: 22px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 9px;
+  font-weight: 700;
+  color: #12395f;
+}
+
+.field input[type="text"],
+.field input[type="tel"] {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 50px;
+  padding: 12px 14px;
+  border: 1px solid #cbd8e5;
+  border-radius: 10px;
+  background: #fff;
+  color: #12395f;
+  font-size: 16px;
+  outline: none;
+}
+
+.field input[type="text"]:focus,
+.field input[type="tel"]:focus {
+  border-color: #1976b5;
+  box-shadow: 0 0 0 3px rgba(25, 118, 181, 0.12);
+}
+
+.consent-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0 18px;
+  padding: 14px 16px;
+  border: 1px solid #d5e0ea;
+  border-radius: 10px;
+  background: #f7fafc;
+  color: #12395f;
+}
+
+.consent-row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.field-error {
+  margin-top: 7px;
+  color: #c62828;
+  font-size: 14px;
+  font-weight: 600;
+}
