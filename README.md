@@ -31,3 +31,24 @@ In crowded clinical settings, doctors spend considerable consultation time takin
 
 ```text
 Welcome ──► Language Select ──► Identification & Consent ──► Guided Voice/Touch Intake ──► Document Scan ──► Physician Summary
+
+
+## 🏗️ System Architecture
+
+```text
+                    ┌─────────────────────────┐
+                    │    React 19 + Vite      │
+                    │  (Render Static Site)   │
+                    └────────────┬────────────┘
+                                 │
+                                 │ VITE_API_URL
+                                 ▼
+                    ┌─────────────────────────┐
+                    │   Node.js + Express     │
+                    │  (Render Web Service)   │
+                    └──────┬───────────┬──────┘
+                           │           │
+           ┌───────────────▼┐         ┌▼────────────────┐
+           │ Google Gemini  │         │ Firebase /      │
+           │ Multimodal API │         │ Firestore DB    │
+           └────────────────┘         └─────────────────┘
