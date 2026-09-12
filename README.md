@@ -52,3 +52,14 @@ Welcome ──► Language Select ──► Identification & Consent ──► G
            │ Google Gemini  │         │ Firebase /      │
            │ Multimodal API │         │ Firestore DB    │
            └────────────────┘         └─────────────────┘
+
+## 👥 Team & Contributors
+
+Developed for Smart India Hackathon (PS 26047) by:
+
+* **Abhishek Pramanik** - Full-Stack & System Lead (Owner) — [@abhisnik](https://github.com/abhisnik)
+* **Shweta** - Frontend & UI/UX — [@Shweta](https://github.com/prajapatishweta354-jpg)
+* **Aditya Sharma** - Clinical Workflow & QA — [@Aditya]()
+* **Subham Das** - Voice Interface & Accessibility Engineer — [@Subham](subhamdas23may-create)
+* **Darshika Sharma** - AI & Clinical Document Intelligence — [@Darshika]()
+* **Abhijeet Yadav** - Backend, Cloud & Data Persistence — [@Abhijeet]()
