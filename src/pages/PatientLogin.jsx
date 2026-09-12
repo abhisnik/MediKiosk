@@ -71,7 +71,7 @@ export default function PatientLogin() {
         phone,
       });
 
-      navigate("/consent");
+      navigate("/interview");
     } catch (error) {
       console.error("Patient registration failed:", error);
 
